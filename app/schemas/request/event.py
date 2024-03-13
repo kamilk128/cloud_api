@@ -6,6 +6,7 @@ class EventRequest(BaseModel):
     name: str
     startDate: date
     endDate: date
+    latitude: float
     longitude: float
     imageUrl: str
     categories: str
