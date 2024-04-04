@@ -1,9 +1,22 @@
 version: "3.8"
 services:
+  frontend:
+    container_name: cloud_frontend
+    build:
+      context: ./evento/
+      target: prod
+      args:
+        VITE_API_URL: ${VITE_API_URL}
+        VITE_GEOAPIFY_KEY: ${VITE_GEOAPIFY_KEY}
+        VITE_CLOUDINARY_CLOUD_NAME: ${VITE_CLOUDINARY_CLOUD_NAME}
+        VITE_CLOUDINARY_UPLOAD_PRESET: ${VITE_CLOUDINARY_UPLOAD_PRESET}
+    image: evento_frontend
+    ports: 
+      - "8080:8080"
   api:
     container_name: cloud_api_c
     build:
-      context: ./
+      context: ./cloud_api/
     image: cloud_api
     restart: unless-stopped
     ports:
@@ -14,3 +27,4 @@ services:
       DB_NAME: ${DB_NAME}
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
+

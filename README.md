@@ -1,11 +1,21 @@
 # cloud api
+```
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
 
-python -m venv venv </br>
-.\venv\Scripts\activate </br>
-pip install -r requirements.txt </br>
-uvicorn app.main:app --host 0.0.0.0 --port 8000</br>
-</br>
 .env.example -> .env + password
 </br>
-</br>
 http://localhost:8000/docs
+
+# docker compose
+
+&#8594; expose docker-compose.yml to the parent directory with the "colud_api" and "evento" repositories
+</br></br>
+&#8594; merge env variables from both "colud_api" and "evento" to the single .env file and place it in the same directory as docker-copmose.yml
+</br></br>
+```
+docker-copmose up
+```
