@@ -12,7 +12,7 @@ http://localhost:8000/docs
 
 # docker compose
 
-&#8594; expose docker-compose.yml to the parent directory with the "colud_api" and "evento" repositories
+&#8594; expose docker-compose.yml to the parent directory with the "[colud_api](https://github.com/kamilk128/cloud_api)" and "[evento](https://github.com/KRQPLY/evento/tree/cloud-develop)" repositories
 </br></br>
 &#8594; merge env variables from both "colud_api" and "evento" to the single .env file and place it in the same directory as docker-copmose.yml
 </br></br>
