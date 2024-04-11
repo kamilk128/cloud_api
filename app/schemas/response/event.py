@@ -13,4 +13,4 @@ class EventInfo(BaseModel):
     categories: str
     habitantes: float
 
-    # distance: float | None = None
+    distance: float | None = None

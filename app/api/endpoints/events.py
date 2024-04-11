@@ -57,11 +57,13 @@ async def get_events_all(latitude: float, longitude: float):
     distances = {}
     events.sort(
         key=lambda event: distance_between(
-            event, [event.longitude, event.latitude], location, distances
+            event, [event.latitude, event.longitude], location, distances
         )
     )
 
-    event_info_list = [EventInfo(**event.__dict__) for event in events]
+    event_info_list = [
+        EventInfo(**event.__dict__, distance=distances[event.name]) for event in events
+    ]
     # distance=distances[event.name]
 
     return event_info_list
