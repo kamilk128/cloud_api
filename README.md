@@ -1,5 +1,10 @@
 # cloud api
 
+## About
+<a href="https://github.com/kamilk128/evento-restapi">Evento</a>-like project with backend implementation for managing events, created as a project for the Cloud Systems course to implement containerization and Kubernetes.
+
+
+
 ```
 python -m venv venv
 .\venv\Scripts\activate
@@ -80,3 +85,12 @@ alternative (random port):
 minikube service api-service
 minikube service evento-service
 ```
+
+## Technologies
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flate&logo=fastapi)
+![Tortoise ORM](https://img.shields.io/badge/Tortoise_ORM-ED8B00?style=flat)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-black?style=flat&logo=docker)
+![Kubernetes](https://img.shields.io/badge/kubernetes-326ce5.svg?&style=flat&logo=kubernetes&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white)
